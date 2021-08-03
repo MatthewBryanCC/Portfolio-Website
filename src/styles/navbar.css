@@ -21,4 +21,10 @@
     height: 75px;
     margin-bottom: 10px;
     background-color: #111111;
+    transition: all 0.5s ease;
+    transform: scale(0.75);
+}
+
+#Navbar li:hover {
+    transform: scale(1);
 }
