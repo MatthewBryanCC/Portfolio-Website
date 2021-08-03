@@ -1,0 +1,51 @@
+:root {
+    --bobHeight: 15px;
+    --negBobHeight: 0px;
+}
+#Wave_Outer_Translator {
+    /*animation: translate 10s infinite ease;*/
+    position: absolute;
+    bottom: 0%;
+}
+#Wave_Outer {
+
+    animation: myOrbit 5s infinite reverse linear;
+    perspective: 492px;
+    perspective-origin: 50% 50%;
+}
+#Wave_Container {
+    display: inline-grid;
+    background-image: url("../images/wave-plain.png");
+    width: 220vw;
+    height: 300px;
+    margin-left: -50vw;
+    transform-style: preserve-3d;
+}
+.pretty-wave {
+    background-image: url("../images/wave-paint.png") !important;
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+
+@keyframes upDown {
+    0% {transform: translatey(var(--negBobHeight));}
+    50% {transform: translatey(var(--bobHeight));}
+    100% {transform: translatey(var(--negBobHeight));}
+}
+@keyframes translate {
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(10%);}
+    100% {transform: translateX(0%);}
+}
+
+.move_back {
+    transform: translateZ(100px);
+}
+.delay1 {
+    animation-delay: -3s !important;
+    
+}

@@ -1,0 +1,9 @@
+html {
+    height: 200%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 55%, rgba(0,93,111,1) 67%, rgba(0,212,255,1) 89%, rgba(0,212,255,1) 100%);
+    overflow-x: hidden;
+}
+body{ 
+    height: 100%;
+}
