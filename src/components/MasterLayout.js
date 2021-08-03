@@ -7,7 +7,9 @@ import WavesLayout from './WavesLayout'
 export default function MasterLayout({children}) {
     return (  
         <div className="web_wrapper">
-            <Navbar />
+            <div id="Background">
+                <Navbar />
+            </div>
             <WavesLayout zPosition="0px" waveNumber="0" />
             <WavesLayout zPosition="100px" waveNumber="1"/>
             <WavesLayout zPosition="100px" waveNumber="2"/>
